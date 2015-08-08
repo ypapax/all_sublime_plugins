@@ -1,0 +1,6 @@
+routes = require './b/e.iced'
+rrnt = require './b/c/k/f.iced'
+db = require 'db'
+module.exports = (url, param, test)=>
+	rrnt routes, url, param, test
+	
