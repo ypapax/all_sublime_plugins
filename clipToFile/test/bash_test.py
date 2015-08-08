@@ -1,5 +1,10 @@
-import bash
 import unittest
+import sys
+
+import os
+currentFolder = os.path.dirname(os.path.realpath(__file__))
+sys.path.insert(0, os.path.join(currentFolder, '..'))
+import bash
 
 
 class Test(unittest.TestCase):

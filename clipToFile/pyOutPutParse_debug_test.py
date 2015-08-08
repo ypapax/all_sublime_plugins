@@ -1,11 +1,11 @@
-
-
-
 import unittest
-import pyOutPutParse5 as pyOutPutParse
-
 import sys
-sys.path.insert(0, '/Users/maks/Library/Application Support/Sublime Text 3/Packages/util')
+
+import os
+currentFolder = os.path.dirname(os.path.realpath(__file__))
+sys.path.insert(0, os.path.join(currentFolder, '../util'))
+sys.path.insert(0, os.path.join(currentFolder, '../clipToFile'))
+import pyOutPutParse5 as pyOutPutParse
 import color
 
 
