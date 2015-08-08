@@ -1,0 +1,5 @@
+package myPackage
+
+func myMethod() {
+
+}
