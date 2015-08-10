@@ -1,0 +1,6 @@
+[
+
+{"caption": "ypapax.go: create go test near", "command": "create_go_test"},
+{"caption": "ypapax.go: go test copy command for this method to clipboard", "command": "plugin_window_create_go_test_"},
+{"caption": "ypapax.go: copy method usage to clip go ", "command": "copy_method_usage_to_clip_go_"},
+]

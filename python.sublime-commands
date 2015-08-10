@@ -1,0 +1,7 @@
+[
+{"caption": "ypapax.python: nosetests one file test python to clipboard", "command": "nosetests_one_file_plugin_"},
+{"caption": "ypapax.python: create py test ", "command": "plugin_window_create_py_test_"},
+{"caption": "ypapax.python: nosetests ", "command": "plugin_window_nosetests_"},
+{"caption": "ypapax.python: alltests", "command": "copy_alltests_in_folder_command"},
+{"caption": "ypapax.python: navigate to method", "command": "navigate_to_method"},
+]

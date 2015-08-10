@@ -15,22 +15,11 @@ class plugin_window__go_to_relative_plugin__Command(sublime_plugin.WindowCommand
         view = self.window.active_view()
         filename = view.file_name()
         if not rel:
-            
-            
-
-            
             view = self.window.active_view()
             region1 = view.sel()[0]
             line = view.line(region1)
             linetext = view.substr(line)
-
-            
-
             rel = linetext
-            print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-            print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-            print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-            print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
             rel = getRel.getRel(rel)[0]
         abs2 = absRel.AbsAddExtension(filename, rel)        
 
