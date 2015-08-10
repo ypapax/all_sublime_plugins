@@ -1,0 +1,4 @@
+if inlist:
+			currentIndex = allList.index(current) #todo: make test to test when current item not in list
+			chooseNumber =  currentIndex + 1
+			if chooseNumber >= len(allList):

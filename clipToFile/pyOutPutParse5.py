@@ -39,17 +39,13 @@ def parseIcedOrPython(clip, python):
 	print(clip)
 	# m = re.findall(r'File "/*.py", line \d+, in ', clip)
 	if (python):
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('python')
 		print(python)
-		print('*****************************************************************')
 		m = re.findall(r'File "(/.*.py)", line (\d+)', clip)	
 	else:
 		m = match.iced(clip)
-	print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 	color.red('m')
 	print(m)
-	print('*****************************************************************')	
 		
 	color.blue("matches")
 	pathes = [ i + ":" + j for (i,j) in m]
@@ -68,19 +64,15 @@ def parseIcedOrPythonOrGo(clip, pythonOrIcedOrGo):
 	print(clip)
 	# m = re.findall(r'File "/*.py", line \d+, in ', clip)
 	if (python):
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('python')
 		print(python)
-		print('*****************************************************************')
 		m = re.findall(r'File "(/.*.py)", line (\d+)', clip)	
 	elif iced:
 		m = match.iced(clip)
 	elif go:
 		m = match.iced(clip)
-	print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 	color.red('m')
 	print(m)
-	print('*****************************************************************')	
 		
 	color.blue("matches")
 	pathes = [ i + ":" + j for (i,j) in m]
@@ -94,17 +86,13 @@ def parseGo(clip):
 	print(clip)
 	# m = re.findall(r'File "/*.py", line \d+, in ', clip)
 	if (python):
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('python')
 		print(python)
-		print('*****************************************************************')
 		m = re.findall(r'File "(/.*.py)", line (\d+)', clip)	
 	else:
 		m = match.iced(clip)
-	print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 	color.red('m')
 	print(m)
-	print('*****************************************************************')	
 		
 	color.blue("matches")
 	pathes = [ i + ":" + j for (i,j) in m]

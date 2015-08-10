@@ -17,10 +17,8 @@ class Test(unittest.TestCase):
 			find = (findWhat, expected, test, autocb)->
 				rf = require '../grab/redisFunc' """
 		result = getRel.getRel(text)
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('result')
 		print(result)
-		print('*****************************************************************')
 		expected = ["../grab/2_allFilesAtOnes/findInFullRegion", "../grab/redisFunc"]
 		self.assertEqual (result, expected)
 		

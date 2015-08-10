@@ -4,6 +4,7 @@ from os.path import isfile, join
 
 import sys
 sys.path.insert(0, '/Users/maks/Library/Application Support/Sublime Text 3/Packages/util')
+
 import color
 	
 

@@ -13,10 +13,8 @@ class Test(unittest.TestCase):
 		inputText = repr("'")
 		result = util.replaceLastAndFirstQuotes(inputText)
 
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('result')
 		print(repr(result))
-		print('*****************************************************************')
 
 
 if __name__ == '__main__':

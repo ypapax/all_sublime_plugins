@@ -15,10 +15,8 @@ class Test(unittest.TestCase):
 
 
 		result = pyOutPutParse.parse(clip)
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('result')
 		print(result)
-		print('*****************************************************************')
 		self.assertEqual(result, ['/Users/maks/Library/Application Support/Sublime Text 3/Packages/navigateTo/findRequire_test.py:17'])
 	
 

@@ -13,10 +13,8 @@ class Test(unittest.TestCase):
 		color.blue("test here baby")
 		fileName = os.path.join(currentFolder, '../poligon/file.data')
 		result = filerCodecs.read(fileName)
-		color.red('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		print('result')
 		print(repr(result))
-		color.red('*****************************************************************')
 		# expected = ""
 		# assertMy.equals(result, expected)
 

@@ -16,10 +16,8 @@ class Test(unittest.TestCase):
 		result = filerCodecs.write(fileName, readData + readData)
 		
 
-		color.red('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		print('result')
 		print(repr(result))
-		color.red('*****************************************************************')
 		# expected = ""
 		# assertMy.equals(result, expected)
 

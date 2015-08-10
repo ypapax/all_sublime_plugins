@@ -219,7 +219,7 @@ exports.rf = rf
 
 #   nameParts = regionName.split "-"
 #   contains = fullRegion.filter (fr)->
-#       target = (nameParts[0]).replace /ия$/, '' #Удмурт ия
+#       target = (nameParts[0]).replace 
 #       (~fr.indexOf target) or ( fullId? and (fr is fullId))
 #   # rf.fin()  
 #   cb contains, rf 

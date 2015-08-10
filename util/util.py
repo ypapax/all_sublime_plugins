@@ -14,10 +14,8 @@ def itemInList(item, listik):
 def clearEmptyLines(text):
 	regex = '\n*\s*\n+'
 	m = re.findall(regex, text)
-	print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 	color.red('m')
 	print(repr(m))
-	print('*****************************************************************')
 	result = re.sub(regex, '\n', text)
 
 	

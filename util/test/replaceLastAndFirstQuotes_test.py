@@ -13,15 +13,11 @@ class Test(unittest.TestCase):
 		inputText = repr('\n')
 		result = util.replaceLastAndFirstQuotes(inputText)		
 
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('inputText')
 		print(inputText)
-		print('*****************************************************************')
 
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('result')
 		print(result)
-		print('*****************************************************************')
 
 	def test_testNameWithColors(self):
 		color.blue("test here baby")
@@ -30,15 +26,11 @@ class Test(unittest.TestCase):
 		
 		result = util.replaceLastAndFirstQuotes(inputText)		
 
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('inputText')
 		print(inputText)
-		print('*****************************************************************')
 
-		print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 		color.red('result')
 		print(result)
-		print('*****************************************************************')
 
 
 if __name__ == '__main__':

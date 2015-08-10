@@ -11,10 +11,10 @@ import navigateToModel
 class Test(unittest.TestCase):
 	def test_testName(self):
 		color.blue("test here baby")
-		filename="/Users/maks/Library/Application Support/Sublime Text 3/Packages/findUsages/find_usages_plugin.py"
+		filename=os.path.join(currentFolder, '../../find_usages_plugin.py')
 		position= 626
 		(resultFile, resultPosition) = navigateToModel.filenameAndPositionTransform(filename, position)
-		expectedFile = "/Users/maks/Library/Application Support/Sublime Text 3/Packages/findUsages/reactOnCursorPosition.py"
+		expectedFile = os.path.join(currentFolder, '../../findUsages/reactOnCursorPosition.py')
 		expectedPosition = 159
 		assertMy.equals(resultFile, expectedFile)
 		self.assertEqual(resultPosition, expectedPosition)

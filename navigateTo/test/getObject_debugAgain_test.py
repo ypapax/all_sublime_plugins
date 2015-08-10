@@ -60,10 +60,8 @@ class Test(unittest.TestCase):
         position = 638
 
         result = navigateToModel.getObject(inputText, position)
-        color.red('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
         print('result')
         print(repr(result))
-        color.red('*****************************************************************')
 
         self.assertEqual(result, expected)
 

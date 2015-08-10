@@ -60,10 +60,8 @@ def getObject(text, position):
 def findRequire(text, objectName):
     regex = "{} =.+'(.+)'".format(objectName)
     
-    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
     color.red('regex')
     print(repr(regex))
-    print('*****************************************************************')
     result = re.findall(regex, text)
     if len(result):
         return result[0]
@@ -95,60 +93,39 @@ def filenameAndPositionTransform(filename, position):
     filename2 = filename
     position2 = 0
 
-    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
     color.red('text')
     print(text)
-    print('*****************************************************************')
 
-    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
     color.red('position')
     print(repr(position))
-    print('*****************************************************************')
-
 
     [obj, method] = getObject(text, position)
 
-    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
     color.red('obj')
     print(repr(obj))
-    print('*****************************************************************')
-
-    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
     color.red('method')
     print(repr(method))
-    print('*****************************************************************')
     
     if isPy:
         filename2 = pyFind.filename2(filename, obj)
-        print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
         color.red('filename2')
         print(repr(filename2))
-        print('*****************************************************************')
         if method:
             regex = "def {0}\(|{0} =".format(method)
-            print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
             color.red('regex')
             print(repr(regex))
-            print('*****************************************************************')
             position2 = getPosition(filename2, regex) 
             if position2 > 0:
                 position2 = position2 + len("def")
     else:
         if obj:
-            print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
             color.red('text')
             print(text)
-            print('*****************************************************************')
-
-            print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
             color.red('obj')
             print(repr(obj))
-            print('*****************************************************************')
             rel = findRequire(text, obj)
-            print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
             color.red('rel')
             print(repr(rel))
-            print('*****************************************************************')
 
             filename2 = absRel.AbsAddExtension(filename, rel)
 
