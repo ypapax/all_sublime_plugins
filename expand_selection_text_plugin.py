@@ -45,8 +45,6 @@ class expand_selection_text_pluginCommand(sublime_plugin.TextCommand):
         return sublime.Region(pos, self.find_by_class(pos + delta, classes, forward))
 
     def run(self, edit, forward = True, sub_words = False):
-
-        print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
         print("forward: ", forward, "; sub_words: ", sub_words)
         # if not forward:
         #     forward = False
@@ -75,8 +73,3 @@ class expand_selection_text_pluginCommand(sublime_plugin.TextCommand):
                 clamp(0, s.b, sz)))
 
         self.view.run_command("add_to_kill_ring", {"forward": forward})
-
-        # if forward:
-        #     self.view.run_command('right_delete')
-        # else:
-        #     self.view.run_command('left_delete')

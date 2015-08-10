@@ -1,8 +1,3 @@
-# Moves or simply renames files via a keyboard shortcut using python os and shutil modules.
-# Configure the shortcut in the .sublime-keymap file of your choice.
-# See keymap file included in this project for a reference.
-# Currently, it only moves files to pre-existing directories.
-
 import os
 import shutil
 import sublime
@@ -57,7 +52,6 @@ class CopynearCommand(sublime_plugin.WindowCommand):
     def fileOperations(self, window, old_file, new_file):
         try:
             shutil.copy(old_file, new_file)
-            print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
             print(new_file)
             self.window.open_file(new_file)   
         except IOError as e:

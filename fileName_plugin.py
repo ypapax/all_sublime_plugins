@@ -1,8 +1,6 @@
 import os
 from os.path import basename
 
-# now you can call it directly with basename
-
 import sublime, sublime_plugin
 
 class plugin_text_copy_name_Command(sublime_plugin.WindowCommand):

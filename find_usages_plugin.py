@@ -14,9 +14,7 @@ class plugin_window_find_usages_plugin_Command(sublime_plugin.WindowCommand):
         position = region1.a
         view = self.window.active_view()
         filename = view.file_name()
-        
         if filename and os.path.isfile(filename):
-
             (filename2, position2, status) = reactOnCursorPosition.starter(filename, position, obj, command)
             window = self.window
             if filename2 != filename:
@@ -28,8 +26,6 @@ class plugin_window_find_usages_plugin_Command(sublime_plugin.WindowCommand):
             view.show(target_region)
             print(status)
             sublime.status_message(status)
-
         else:
-
             sublime.status_message("no such file exists on disk "+str(filename))
         

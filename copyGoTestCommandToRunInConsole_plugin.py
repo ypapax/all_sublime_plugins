@@ -1,7 +1,7 @@
-
-
 import sys
-sys.path.insert(0, '/Users/maks/Library/Application Support/Sublime Text 3/Packages/navigateTo')
+import os
+currentFolder = os.path.dirname(os.path.realpath(__file__))
+sys.path.insert(0, os.path.join(currentFolder, 'navigateTo'))
 import navigateToModel
 
 import sublime, sublime_plugin

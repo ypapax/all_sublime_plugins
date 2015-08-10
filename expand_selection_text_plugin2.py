@@ -45,13 +45,6 @@ class expand_selection_text_plugin2Command(sublime_plugin.TextCommand):
         return sublime.Region(pos, self.find_by_class(pos + delta, classes, forward))
 
     def run(self, edit, forward = False, sub_words = False):
-
-
-        # newRegion = 
-        # self.view.sel().add(sublime.Region(clamp(0, s.a, sz),
-        #         clamp(0, s.b, sz)))
-
-        print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
         print("forward: ", forward, "; sub_words: ", sub_words)
         # if not forward:
         #     forward = False

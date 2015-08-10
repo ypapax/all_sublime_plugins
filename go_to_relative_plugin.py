@@ -2,10 +2,7 @@ import sys
 import os
 currentFolder = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, os.path.join(currentFolder, 'moveNearReplace'))
-
-
 import getRel
-    
 import absRel3 as absRel
 import sublime, sublime_plugin
 
